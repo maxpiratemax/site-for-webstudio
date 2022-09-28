@@ -80,18 +80,22 @@ function removeActiveClass() {
 }
 
 /* Collapse */
-function collapseWeDo(item) {
-  item.addEventListener('click', () => {    
-    if ([...item.classList].some(i => i !== 'active')) {
-      [weDo1, weDo2, weDo3].forEach(item => item.classList.remove('active'));
-      item.classList.add('active');
-    }
-  })
-}
 
-collapseWeDo(weDo1)
-collapseWeDo(weDo2)
-collapseWeDo(weDo3)
+; (() => {
+  let accordion = document.querySelector('.accordion').children;
+
+  [...accordion].forEach(item => {
+    item.addEventListener('click', () => {
+      if (item.classList.contains('active')) {
+        item.classList.remove('active');
+      } else {
+        [...accordion].forEach(i=>i.classList.remove('active'))
+        item.classList.add('active');
+      }
+    })
+  })
+})()
+
 
 /* Slider */
 $("[data-slider]").slick({
