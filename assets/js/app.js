@@ -10,6 +10,7 @@ const navBar = document.querySelectorAll('#nav a')
 let weDo1 = document.querySelector("#wedo_1");
 let weDo2 = document.querySelector("#wedo_2");
 let weDo3 = document.querySelector("#wedo_3");
+let navToggle = document.querySelector("#nav_toggle")
 
 /* Fixed Header and Menu Lightning */
 window.addEventListener("scroll", function () {
@@ -53,7 +54,7 @@ function checkScroll(scrollOffset) {
   /* Lightning Works */
   addClassToBlock(worksH, worksBlock, works)
 
-  /* Lightning Works */
+  /* Lightning Blog */
   addClassToBlock(blogH, blogBlock, blog, 'active', 20, 200)
 
   /* Lightning Contacts */
@@ -104,4 +105,10 @@ $("[data-slider]").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+
+/* Toggle burger menu */
+navToggle.addEventListener('click', ()=>{
+  document.getElementById("nav").classList.toggle("active");
+  navToggle.classList.toggle("active");
+})
 
