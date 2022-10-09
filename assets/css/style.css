@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 
     font-size: 15px;
     line-height: 1.6;
@@ -17,7 +17,12 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -31,12 +36,10 @@ hr {
     background-color: #e5e5e5;
 }
 
-
 /* Page */
 .page {
     overflow: hidden;
 }
-
 
 /* Container */
 .container {
@@ -45,8 +48,6 @@ hr {
     padding: 0 15px;
     margin: 0 auto;
 }
-
-
 
 /* Intro */
 .intro {
@@ -92,11 +93,10 @@ hr {
 .intro__suptitle {
     margin-bottom: 20px;
 
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
     font-size: 72px;
     color: #fff;
 }
-
 
 /* Header */
 .header {
@@ -140,9 +140,8 @@ hr {
     color: #fff;
 }
 .header__logo.active {
-cursor: pointer;
+    cursor: pointer;
 }
-
 
 /* Nav */
 .nav {
@@ -163,7 +162,7 @@ cursor: pointer;
     color: #fff;
     text-decoration: none;
 
-    transition: color .1s linear;
+    transition: color 0.1s linear;
 }
 
 .nav__link:after {
@@ -180,7 +179,7 @@ cursor: pointer;
     left: 0;
     z-index: 1;
 
-    transition: opacity .1s linear;
+    transition: opacity 0.1s linear;
 }
 
 .nav__link:hover {
@@ -195,7 +194,6 @@ cursor: pointer;
 .nav__link.active {
     color: #fce38a;
 }
-
 
 /* Nav toggle */
 .nav-toggle {
@@ -234,7 +232,7 @@ cursor: pointer;
     left: 0;
     margin: auto;
 
-    transition: background .2s linear;
+    transition: background 0.2s linear;
 }
 
 .nav-toggle.active .nav-toggle__item {
@@ -253,7 +251,7 @@ cursor: pointer;
     left: 0;
     z-index: 1;
 
-    transition: transform .2s linear;
+    transition: transform 0.2s linear;
 }
 
 .nav-toggle__item:before {
@@ -266,14 +264,13 @@ cursor: pointer;
 
 .nav-toggle.active .nav-toggle__item:before {
     transform-origin: left top;
-    transform: rotate(45deg) translate3d(0px, -2px, 0)
+    transform: rotate(45deg) translate3d(0px, -2px, 0);
 }
 
 .nav-toggle.active .nav-toggle__item:after {
     transform-origin: left bottom;
     transform: rotate(-45deg) translate3d(0px, 3px, 0);
 }
-
 
 /* Button */
 .btn {
@@ -289,15 +286,13 @@ cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
 
-    transition: background .1s linear, color .1s linear;
+    transition: background 0.1s linear, color 0.1s linear;
 }
 
 .btn:hover {
     background-color: #fff;
     color: #333;
 }
-
-
 
 /* Slider */
 .slider {
@@ -320,7 +315,7 @@ cursor: pointer;
     position: relative;
 
     border-top: 3px solid #fff;
-    opacity: .7;
+    opacity: 0.7;
 
     font-size: 18px;
     color: #fff;
@@ -349,7 +344,6 @@ cursor: pointer;
     font-size: 24px;
     font-weight: 700;
 }
-
 
 /* Section */
 .section {
@@ -389,7 +383,7 @@ cursor: pointer;
 }
 
 .section__suptitle {
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
     font-size: 24px;
     color: #333;
 }
@@ -416,8 +410,6 @@ cursor: pointer;
     color: #999;
 }
 
-
-
 /* Card */
 .card {
     margin: 80px -15px 0;
@@ -441,7 +433,7 @@ cursor: pointer;
 }
 
 .card__inner:hover .card__img img {
-    opacity: .1;
+    opacity: 0.1;
 }
 
 .card__inner:hover .card__text {
@@ -451,14 +443,14 @@ cursor: pointer;
 .card__img {
     background: linear-gradient(to bottom, #f38181, #fce38a);
 
-    transition: transform .2s linear;
+    transition: transform 0.2s linear;
 }
 
 .card__img img {
     display: block;
     max-width: 100%;
     height: auto;
-    transition: opacity .1s linear;
+    transition: opacity 0.1s linear;
 }
 
 .card__text {
@@ -477,7 +469,7 @@ cursor: pointer;
     z-index: 2;
     transform: translate3d(0, -50%, 0);
 
-    transition: opacity .2s linear;
+    transition: opacity 0.2s linear;
 }
 
 .card__info {
@@ -500,8 +492,6 @@ cursor: pointer;
     font-weight: 300;
     color: #999;
 }
-
-
 
 /* Statistics */
 .statistics {
@@ -539,7 +529,6 @@ cursor: pointer;
     font-size: 14px;
     text-transform: uppercase;
 }
-
 
 /* Services */
 
@@ -600,7 +589,6 @@ cursor: pointer;
     right: 0;
     z-index: 1;
 }
-
 
 /* We do */
 .wedo {
@@ -690,11 +678,11 @@ cursor: pointer;
     text-transform: uppercase;
 }
 
-
-
 /* Reviews */
 .reviews {
     position: relative;
+    overflow: hidden;
+    padding: 0 70px 40px;
 }
 
 .reviews .slick-slider {
@@ -731,7 +719,7 @@ cursor: pointer;
 }
 
 .reviews__author {
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
     font-size: 24px;
     color: #333;
 }
@@ -747,46 +735,14 @@ cursor: pointer;
     background-color: #f38181;
 }
 
-.slick-arrow {
-    display: block;
-    font-size: 0;
-    color: transparent;
-
-    border: 0;
-    background: none;
-    cursor: pointer;
-
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    transform: translateY(-50%);
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ccc !important;
 }
 
-.slick-arrow:focus {
-    outline: 0;
+.swiper-pagination-bullet-active {
+    background-color: #eb8b8d !important;
 }
-
-.slick-arrow:after {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-
-    border-top: 2px solid #ccc;
-    border-left: 2px solid #ccc;
-}
-
-.slick-prev {
-    left: 0;
-    transform: rotate(-45deg);
-}
-
-.reviews__btn--next,
-.slick-next {
-    right: 0;
-    transform: rotate(135deg);
-}
-
 
 /* Social */
 .social {
@@ -807,7 +763,7 @@ cursor: pointer;
     color: #f38181;
     line-height: 1;
 
-    transition: background .1s linear, color .1s linear;
+    transition: background 0.1s linear, color 0.1s linear;
 }
 
 .social__item:last-child {
@@ -818,7 +774,6 @@ cursor: pointer;
     color: #fff;
     background-color: #f38181;
 }
-
 
 /* Logos */
 .logos {
@@ -838,7 +793,6 @@ cursor: pointer;
     height: auto;
 }
 
-
 /* Works */
 .works {
     display: flex;
@@ -855,7 +809,7 @@ cursor: pointer;
 }
 
 .works__item:hover .works__image {
-    opacity: .1;
+    opacity: 0.1;
 }
 
 .works__item:hover .works__info {
@@ -866,7 +820,7 @@ cursor: pointer;
     display: block;
     width: 100%;
     height: auto;
-    transition: opacity .2s linear;
+    transition: opacity 0.2s linear;
 }
 
 .works__info {
@@ -883,7 +837,7 @@ cursor: pointer;
     z-index: 1;
 
     transform: translate3d(0, -50%, 0);
-    transition: opacity .2s linear;
+    transition: opacity 0.2s linear;
 }
 
 .works__title {
@@ -898,8 +852,6 @@ cursor: pointer;
     font-weight: 300;
     font-style: italic;
 }
-
-
 
 /* Clients */
 .clients {
@@ -956,7 +908,6 @@ cursor: pointer;
 
     background-color: #f38181;
 }
-
 
 /* Blog */
 
@@ -1051,7 +1002,6 @@ cursor: pointer;
     color: #95e1d3;
 }
 
-
 /* Map */
 
 .map {
@@ -1083,8 +1033,6 @@ cursor: pointer;
 .map__title a:hover {
     text-decoration: underline;
 }
-
-
 
 /* Footer */
 .footer {
@@ -1175,8 +1123,6 @@ cursor: pointer;
     text-transform: uppercase;
 }
 
-
-
 /* Blogs */
 .blogs__item {
     display: flex;
@@ -1215,7 +1161,6 @@ cursor: pointer;
     font-weight: 300;
 }
 
-
 /* Instagram */
 .instagram {
     display: flex;
@@ -1234,7 +1179,6 @@ cursor: pointer;
     height: auto;
 }
 
-
 /* Subscribe */
 .subscribe {
     width: 100%;
@@ -1251,7 +1195,7 @@ cursor: pointer;
     border: 1px solid #e7e7e7;
     border-right: 0;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     line-height: 1.1;
     color: #333;
@@ -1277,14 +1221,14 @@ cursor: pointer;
     border: 0;
     cursor: pointer;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 1.1;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
 
-    transition: background .2s linear;
+    transition: background 0.2s linear;
 }
 
 .subscribe__btn:hover {
@@ -1294,7 +1238,6 @@ cursor: pointer;
 .subscribe__btn:focus {
     outline: 0;
 }
-
 
 /* Copyright */
 .copyright {
@@ -1311,11 +1254,7 @@ cursor: pointer;
     color: #f38181;
 }
 
-
-
-
 @media (max-width: 1230px) {
-
     /* Intro */
     .intro__suptitle {
         font-size: 52px;
@@ -1332,7 +1271,6 @@ cursor: pointer;
 }
 
 @media (max-width: 990px) {
-
     /* Intro */
     .intro__suptitle {
         font-size: 32px;
@@ -1344,7 +1282,7 @@ cursor: pointer;
 
     /* Stat */
     .stat {
-       justify-content: center;
+        justify-content: center;
     }
 
     .stat__item {
@@ -1399,7 +1337,6 @@ cursor: pointer;
         margin-bottom: 0;
     }
 
-
     /* Footer */
     .footer__col--first {
         width: 100%;
@@ -1422,12 +1359,10 @@ cursor: pointer;
 }
 
 @media (max-width: 770px) {
-
     /* Intro */
     .intro {
         min-height: 650px;
     }
-
 
     /* Header */
     .header {
@@ -1460,7 +1395,6 @@ cursor: pointer;
         display: block;
     }
 
-
     /* Section */
     .section {
         padding: 40px 0;
@@ -1469,7 +1403,6 @@ cursor: pointer;
     .section--devices {
         padding-bottom: 0;
     }
-
 
     /* Card */
     .card {
@@ -1486,7 +1419,6 @@ cursor: pointer;
     .card__item:last-child {
         margin-bottom: 0;
     }
-
 
     /* Slider */
     .slider__text {
@@ -1512,7 +1444,6 @@ cursor: pointer;
     .services__icon {
         left: 0;
     }
-
 
     /* Wedo */
     .wedo__img {
@@ -1566,7 +1497,6 @@ cursor: pointer;
         margin-bottom: 0;
     }
 
-
     /* Footer */
     .footer__col--second,
     .footer__col--third {
@@ -1574,9 +1504,7 @@ cursor: pointer;
     }
 }
 
-
 @media (max-width: 575px) {
-
     /* Intro */
     .intro__suptitle {
         font-size: 22px;
@@ -1618,7 +1546,6 @@ cursor: pointer;
         font-size: 52px;
     }
 
-
     /* Devices */
     .devices {
         max-width: 320px;
@@ -1629,7 +1556,6 @@ cursor: pointer;
         bottom: -50px;
         right: -80px;
     }
-
 
     /* Reviews */
     .reviews .slick-slider {
@@ -1660,7 +1586,6 @@ cursor: pointer;
         width: 100%;
     }
 
-
     /* Clients */
     .clients__photo {
         position: static;
@@ -1674,7 +1599,6 @@ cursor: pointer;
     .clients__text:before {
         margin: 15px auto;
     }
-
 
     /* Blogs */
     .blogs__img {
@@ -1701,5 +1625,4 @@ cursor: pointer;
     .subscribe__btn {
         width: 100%;
     }
-
 }

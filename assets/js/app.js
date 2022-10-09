@@ -99,12 +99,31 @@ function removeActiveClass() {
 
 
 /* Slider */
-$("[data-slider]").slick({
-  infinite: true,
-  fade: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
+// $("[data-slider]").slick({
+//   infinite: true,
+//   fade: false,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+// });
+
+const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 1,
+  spaceBetween: 100,
+  loop: true,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  breakpoints: {
+      600: {
+          slidesPerView: 1
+      }
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+})
 
 /* Toggle burger menu */
 navToggle.addEventListener('click', ()=>{
